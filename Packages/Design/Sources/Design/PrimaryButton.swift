@@ -12,6 +12,7 @@ public struct PrimaryButton<Label: View>: View {
     public var body: some View {
         Button(action: action) {
             label()
+                .expanding(axis: .horizontal)
         }
         .buttonStyle(.borderedProminent)
     }
@@ -23,4 +24,5 @@ public struct PrimaryButton<Label: View>: View {
     } label: {
         Text(verbatim: "Primary")
     }
+    .padding()
 }

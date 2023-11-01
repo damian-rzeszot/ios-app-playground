@@ -12,6 +12,7 @@ public struct SecondaryButton<Label: View>: View {
     public var body: some View {
         Button(action: action) {
             label()
+                .expanding(axis: .horizontal)
         }
         .buttonStyle(.bordered)
     }
@@ -23,4 +24,5 @@ public struct SecondaryButton<Label: View>: View {
     } label: {
         Text(verbatim: "Secondary")
     }
+    .padding()
 }
