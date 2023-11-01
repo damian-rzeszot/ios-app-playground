@@ -14,19 +14,3 @@ public struct ThemeReader<Content: View>: View {
         content(theme)
     }
 }
-
-#Preview {
-    ThemeReader { theme in
-        VStack {
-            Text(verbatim: "Primary")
-            theme.primary
-                .frame(height: 30)
-        }
-        VStack {
-            Text(verbatim: "Secondary")
-            theme.secondary
-                .frame(height: 30)
-        }
-    }
-    .padding()
-}

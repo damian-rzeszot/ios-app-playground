@@ -1,4 +1,5 @@
 import SwiftUI
+import Utils
 
 public struct PrimaryButton<Label: View>: View {
     let label: () -> Label
@@ -14,7 +15,6 @@ public struct PrimaryButton<Label: View>: View {
             label()
                 .font(.body.bold())
                 .expanding(.horizontal)
-                .padding(.vertical, .small)
         }
         .buttonStyle(.borderedProminent)
     }

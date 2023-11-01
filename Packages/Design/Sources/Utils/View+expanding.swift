@@ -11,19 +11,25 @@ public extension View {
     }
 }
 
-#Preview {
+#Preview("Vertical center") {
     Text(verbatim: "hello")
         .expanding(.vertical)
         .background { Color.red }
 }
 
-#Preview {
+#Preview("Vertical top") {
+    Text(verbatim: "hello")
+        .expanding(.vertical, alignment: .top)
+        .background { Color.red }
+}
+
+#Preview("Horizontal center") {
     Text(verbatim: "hello")
         .expanding(.horizontal)
         .background { Color.red }
 }
 
-#Preview {
+#Preview("Horizontal leading") {
     Text(verbatim: "hello")
         .expanding(.horizontal, alignment: .leading)
         .background { Color.red }

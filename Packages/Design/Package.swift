@@ -1,5 +1,4 @@
 // swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -11,16 +10,31 @@ let package = Package(
     products: [
         .library(
             name: "Design",
-            targets: ["Design"]
+            targets: [
+                "Buttons",
+                "Margin",
+                "Utils"
+            ]
         ),
     ],
     targets: [
         .target(
-            name: "Design"
+            name: "Theme"
         ),
-        .testTarget(
-            name: "DesignTests",
-            dependencies: ["Design"]
+        .target(
+            name: "Utils"
+        ),
+        .target(
+            name: "Margin"
+        ),
+
+        .target(
+            name: "Buttons",
+            dependencies: [
+                "Theme",
+                "Utils",
+                "Margin"
+            ]
         ),
     ]
 )
