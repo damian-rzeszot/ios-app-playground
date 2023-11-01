@@ -82,6 +82,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2DA2E6E62AF2CFAC000FBB7B /* PBXTargetDependency */,
 			);
 			name = App;
 			packageProductDependencies = (
@@ -149,6 +150,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DA2E6E62AF2CFAC000FBB7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2DA2E6E52AF2CFAC000FBB7B /* Design */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2DA2E6DA2AF25353000FBB7B /* Debug */ = {
@@ -361,6 +369,11 @@
 /* Begin XCSwiftPackageProductDependency section */
 		2DA2E6E32AF27D7D000FBB7B /* Design */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = Design;
+		};
+		2DA2E6E52AF2CFAC000FBB7B /* Design */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA2E6E22AF27D7D000FBB7B /* XCLocalSwiftPackageReference "Packages/Design" */;
 			productName = Design;
 		};
 /* End XCSwiftPackageProductDependency section */
