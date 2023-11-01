@@ -11,13 +11,13 @@ public extension Padding {
 
 public extension View {
     @inlinable
-    func foo(_ edges: Edge.Set = .all, _ value: Padding) -> some View {
+    func padding(_ edges: Edge.Set = .all, _ value: Padding) -> some View {
         padding(edges, value.length)
     }
 
     @inlinable
-    func foo(_ value: Padding) -> some View {
-        foo(.all, value)
+    func padding(_ value: Padding) -> some View {
+        padding(.all, value)
     }
 }
 
@@ -25,6 +25,6 @@ public extension View {
     Color.red
         .overlay {
             Color.yellow
-                .foo(.medium)
+                .padding(.medium)
         }
 }
