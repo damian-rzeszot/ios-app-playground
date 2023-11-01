@@ -6,6 +6,26 @@ struct MarginModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
+            .padding(edges, value(for: margin))
+    }
+
+    private func value(for margin: Margin) -> CGFloat {
+        switch margin {
+        case .xs:
+            return 2
+        case .s:
+            return 4
+        case .m:
+            return 8
+        case .l:
+            return 12
+        case .xl:
+            return 16
+        case .xxl:
+            return 20
+        case .xxxl:
+            return 24
+        }
     }
 }
 
@@ -14,15 +34,13 @@ struct MarginModifier: ViewModifier {
         Color.red
             .overlay {
                 Color.yellow
-                    .padding(.horizontal)
-//                    .modifier(MarginModifier(edges: .all, margin: .small))
+                    .margin()
             }
         Divider()
         Color.red
             .overlay {
                 Color.yellow
-                    .padding(.horizontal, 16)
-//                    .modifier(MarginModifier(edges: .all, margin: .medium))
+                    .margin(.xxxl)
             }
     }
     .dynamicTypeSize(.large)

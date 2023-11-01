@@ -11,4 +11,9 @@ public extension View {
     func margin(_ value: Margin) -> some View {
         margin(.all, value)
     }
+
+    @inlinable
+    func margin() -> some View {
+        margin(.all, .standard)
+    }
 }

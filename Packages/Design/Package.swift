@@ -11,6 +11,7 @@ let package = Package(
         .library(
             name: "Design",
             targets: [
+                "Design",
                 "Buttons",
                 "Margin",
                 "Utils"
@@ -36,5 +37,13 @@ let package = Package(
                 "Margin"
             ]
         ),
+
+        .target(
+            name: "Design",
+            dependencies: [
+                "Buttons",
+                "Theme"
+            ]
+        )
     ]
 )

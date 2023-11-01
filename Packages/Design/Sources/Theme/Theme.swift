@@ -1,16 +1,20 @@
 import SwiftUI
 
 public struct Theme {
-    public let primary: Color
-    public let secondary: Color
     public let tint: Color
+
+    public init(tint: Color) {
+        self.tint = tint
+    }
 }
 
-extension Theme {
+public extension Theme {
     static let `default`: Self = .init(
-        primary: .primary,
-        secondary: .secondary,
         tint: .accentColor
+    )
+
+    static let green: Self = .init(
+        tint: .green
     )
 }
 

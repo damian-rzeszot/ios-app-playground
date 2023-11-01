@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct PrimaryButton<Label: View>: View {
+public struct TertiaryButton<Label: View>: View {
     let label: () -> Label
     let action: () -> Void
 
@@ -11,13 +11,13 @@ public struct PrimaryButton<Label: View>: View {
 
     public var body: some View {
         GenericButton(action: action, label: label)
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(.borderless)
     }
 }
 
 #Preview {
-    PrimaryButton(action: {}) {
-        Text(verbatim: "Primary")
+    TertiaryButton(action: {}) {
+        Text(verbatim: "Tertiary")
     }
     .padding()
 }

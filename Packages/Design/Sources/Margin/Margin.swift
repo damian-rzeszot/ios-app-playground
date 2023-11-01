@@ -9,3 +9,7 @@ public enum Margin {
     case xxl
     case xxxl
 }
+
+public extension Margin {
+    static let standard: Self = .m
+}
