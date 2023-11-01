@@ -12,16 +12,14 @@ public struct PrimaryButton<Label: View>: View {
     public var body: some View {
         Button(action: action) {
             label()
-                .expanding(axis: .horizontal)
+                .expanding(.horizontal)
         }
         .buttonStyle(.borderedProminent)
     }
 }
 
 #Preview {
-    PrimaryButton {
-
-    } label: {
+    PrimaryButton(action: {}) {
         Text(verbatim: "Primary")
     }
     .padding()
