@@ -23,12 +23,16 @@ let package = Package(
             name: "TheApp",
             dependencies: [
                 "Design",
+                "SodaStream"
             ],
             swiftSettings: [
-                .define("FOO")
-//                .define("FOO", .when(configuration: .debug)),
-//                .define("BAR", .when(configuration: .release))
+                .define("FOO", .when(configuration: .debug)),
+                .define("BAR", .when(configuration: .release))
             ]
+        ),
+
+        .target(
+            name: "SodaStream"
         ),
 
         .testTarget(
@@ -39,7 +43,3 @@ let package = Package(
         ),
     ]
 )
-
-//            linkerSettings: [
-//                .linkedLibrary(<#T##library: String##String#>, .when(configuration: .debug))
-//            ],

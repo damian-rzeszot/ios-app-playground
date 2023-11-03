@@ -4,7 +4,10 @@ import TheApp
 
 struct ContentView: View {
     var body: some View {
-        TheAppView()
+        VStack {
+//            ButtonsShowcase()
+            TheAppView()
+        }
     }
 }
 

@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D940B0D2AF59DD6007F7F05 /* Design in Resources */ = {isa = PBXBuildFile; fileRef = 2D940B0B2AF59DD6007F7F05 /* Design */; };
+		2D940B0E2AF59DD6007F7F05 /* Design in Resources */ = {isa = PBXBuildFile; fileRef = 2D940B0B2AF59DD6007F7F05 /* Design */; };
+		2D940B0F2AF59DD6007F7F05 /* TheApp in Resources */ = {isa = PBXBuildFile; fileRef = 2D940B0C2AF59DD6007F7F05 /* TheApp */; };
+		2D940B102AF59DD6007F7F05 /* TheApp in Resources */ = {isa = PBXBuildFile; fileRef = 2D940B0C2AF59DD6007F7F05 /* TheApp */; };
+		2D940B122AF59DF2007F7F05 /* TheApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2D940B112AF59DF2007F7F05 /* TheApp */; };
+		2D940B142AF59DF6007F7F05 /* Design in Frameworks */ = {isa = PBXBuildFile; productRef = 2D940B132AF59DF6007F7F05 /* Design */; };
 		2DA2E6D02AF25352000FBB7B /* TheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2E6CF2AF25352000FBB7B /* TheApp.swift */; };
 		2DA2E6D22AF25352000FBB7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2E6D12AF25352000FBB7B /* ContentView.swift */; };
 		2DA2E6D62AF25353000FBB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2E6D52AF25353000FBB7B /* Assets.xcassets */; };
-		2DACA6682AF58DEF00F2B8E8 /* TheApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2DACA6672AF58DEF00F2B8E8 /* TheApp */; };
 		2DACA6702AF58E3600F2B8E8 /* ShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACA66F2AF58E3600F2B8E8 /* ShowcaseApp.swift */; };
 		2DACA6722AF58E3600F2B8E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACA6712AF58E3600F2B8E8 /* ContentView.swift */; };
 		2DACA6762AF58E3700F2B8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DACA6752AF58E3700F2B8E8 /* Assets.xcassets */; };
-		2DACA6802AF58EC000F2B8E8 /* TheApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2DACA67F2AF58EC000F2B8E8 /* TheApp */; };
 		2DACA6882AF58FC000F2B8E8 /* ShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACA6872AF58FC000F2B8E8 /* ShowcaseTests.swift */; };
 		2DACA68A2AF58FC000F2B8E8 /* ShowcaseTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACA6892AF58FC000F2B8E8 /* ShowcaseTestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D940B0B2AF59DD6007F7F05 /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Design; sourceTree = "<group>"; };
+		2D940B0C2AF59DD6007F7F05 /* TheApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TheApp; sourceTree = "<group>"; };
+		2D940B152AF5A30C007F7F05 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2DA2E6CC2AF25352000FBB7B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA2E6CF2AF25352000FBB7B /* TheApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheApp.swift; sourceTree = "<group>"; };
 		2DA2E6D12AF25352000FBB7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DACA6682AF58DEF00F2B8E8 /* TheApp in Frameworks */,
+				2D940B142AF59DF6007F7F05 /* Design in Frameworks */,
+				2D940B122AF59DF2007F7F05 /* TheApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DACA6802AF58EC000F2B8E8 /* TheApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +79,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D940B0A2AF59DD6007F7F05 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2D940B0C2AF59DD6007F7F05 /* TheApp */,
+				2D940B0B2AF59DD6007F7F05 /* Design */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		2DA2E6C32AF25352000FBB7B = {
 			isa = PBXGroup;
 			children = (
+				2D940B0A2AF59DD6007F7F05 /* Packages */,
 				2DA2E6CE2AF25352000FBB7B /* App */,
 				2DACA66E2AF58E3600F2B8E8 /* Showcase */,
 				2DACA6862AF58FC000F2B8E8 /* ShowcaseTests */,
@@ -98,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				2DA2E6CF2AF25352000FBB7B /* TheApp.swift */,
+				2D940B152AF5A30C007F7F05 /* Localizable.xcstrings */,
 				2DA2E6D12AF25352000FBB7B /* ContentView.swift */,
 				2DA2E6D52AF25353000FBB7B /* Assets.xcassets */,
 			);
@@ -153,11 +171,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2DA2E6E62AF2CFAC000FBB7B /* PBXTargetDependency */,
 			);
 			name = App;
 			packageProductDependencies = (
-				2DACA6672AF58DEF00F2B8E8 /* TheApp */,
+				2D940B112AF59DF2007F7F05 /* TheApp */,
+				2D940B132AF59DF6007F7F05 /* Design */,
 			);
 			productName = App;
 			productReference = 2DA2E6CC2AF25352000FBB7B /* App.app */;
@@ -178,7 +196,6 @@
 			);
 			name = Showcase;
 			packageProductDependencies = (
-				2DACA67F2AF58EC000F2B8E8 /* TheApp */,
 			);
 			productName = Showcase;
 			productReference = 2DACA66D2AF58E3600F2B8E8 /* Showcase.app */;
@@ -234,7 +251,6 @@
 			);
 			mainGroup = 2DA2E6C32AF25352000FBB7B;
 			packageReferences = (
-				2DACA6632AF58D7D00F2B8E8 /* XCLocalSwiftPackageReference "Packages/TheApp" */,
 			);
 			productRefGroup = 2DA2E6CD2AF25352000FBB7B /* Products */;
 			projectDirPath = "";
@@ -252,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D940B0D2AF59DD6007F7F05 /* Design in Resources */,
+				2D940B0F2AF59DD6007F7F05 /* TheApp in Resources */,
 				2DA2E6D62AF25353000FBB7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +278,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D940B0E2AF59DD6007F7F05 /* Design in Resources */,
+				2D940B102AF59DD6007F7F05 /* TheApp in Resources */,
 				2DACA6762AF58E3700F2B8E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,10 +324,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2DA2E6E62AF2CFAC000FBB7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 2DA2E6E52AF2CFAC000FBB7B /* Design */;
-		};
 		2DACA67E2AF58EAF00F2B8E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 2DACA67D2AF58EAF00F2B8E8 /* TheApp */;
@@ -631,10 +647,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		2DA2E6E22AF27D7D000FBB7B /* XCLocalSwiftPackageReference "Packages/Design" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/Design;
-		};
 		2DACA6632AF58D7D00F2B8E8 /* XCLocalSwiftPackageReference "Packages/TheApp" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/TheApp;
@@ -642,22 +654,15 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2DA2E6E52AF2CFAC000FBB7B /* Design */ = {
+		2D940B112AF59DF2007F7F05 /* TheApp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2DA2E6E22AF27D7D000FBB7B /* XCLocalSwiftPackageReference "Packages/Design" */;
+			productName = TheApp;
+		};
+		2D940B132AF59DF6007F7F05 /* Design */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = Design;
 		};
-		2DACA6672AF58DEF00F2B8E8 /* TheApp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2DACA6632AF58D7D00F2B8E8 /* XCLocalSwiftPackageReference "Packages/TheApp" */;
-			productName = TheApp;
-		};
 		2DACA67D2AF58EAF00F2B8E8 /* TheApp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2DACA6632AF58D7D00F2B8E8 /* XCLocalSwiftPackageReference "Packages/TheApp" */;
-			productName = TheApp;
-		};
-		2DACA67F2AF58EC000F2B8E8 /* TheApp */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2DACA6632AF58D7D00F2B8E8 /* XCLocalSwiftPackageReference "Packages/TheApp" */;
 			productName = TheApp;
