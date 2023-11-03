@@ -10,7 +10,9 @@ let package = Package(
     products: [
         .library(
             name: "TheApp",
-            targets: ["TheApp"]
+            targets: [
+                "TheApp"
+            ]
         ),
     ],
     dependencies: [
@@ -20,9 +22,15 @@ let package = Package(
         .target(
             name: "TheApp",
             dependencies: [
-                "Design"
+                "Design",
+            ],
+            swiftSettings: [
+                .define("FOO")
+//                .define("FOO", .when(configuration: .debug)),
+//                .define("BAR", .when(configuration: .release))
             ]
         ),
+
         .testTarget(
             name: "TheAppTests",
             dependencies: [
@@ -31,3 +39,7 @@ let package = Package(
         ),
     ]
 )
+
+//            linkerSettings: [
+//                .linkedLibrary(<#T##library: String##String#>, .when(configuration: .debug))
+//            ],
