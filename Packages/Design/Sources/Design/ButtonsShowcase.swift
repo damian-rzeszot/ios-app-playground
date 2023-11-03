@@ -1,8 +1,10 @@
 import SwiftUI
 import Buttons
 
-struct ButtonsShowcase: View {
-    var body: some View {
+public struct ButtonsShowcase: View {
+    public init() {}
+
+    public var body: some View {
         VStack {
             PrimaryButton(action: {}) {
                 Text(verbatim: "Primary")
